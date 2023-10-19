@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/codigoCopiable.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu" id="menu">                
+                <li><a href="index.html#about">Acerca de</a></li>
+                <li><a href="proyect.html">Mis Proyectos</a></li>
+                <li><a href="code.html">Codigo</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/face.jpg" alt="face" class="imagen_logo">            
+        </div>
+        <h1>Lester Zamora</h1>        
+    </header>
+    <section>
+        <div class="chat-box">
+            <div class="message user">
+                <pre>
+                    <code id="codigo">
+                    // Tu código aquí
+                    function saludar() {
+                    console.log("Hola, mundo");
+                    }
+                    // Tu código aquí
+                    function saludar() {
+                    console.log("Hola, mundo");
+                    }
+                    // Tu código aquí
+                    function saludar() {
+                    console.log("Hola, mundo");
+                    }
+                    // Tu código aquí
+                    function saludar() {
+                    console.log("Hola, mundo");
+                    }
+                    </code>
+                </pre>
+                <button class="copiar-codigo" data-clipboard-target="#codigo">
+                    <i class="far fa-copy"></i><span id="spanCopiar">Copiar Código</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="annio"></span> Lester Zamora</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tucuenta" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/tucuenta" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Agrega más enlaces a tus redes sociales aquí -->
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script>
+    const spanCopiar= document.querySelector('#spanCopiar');
+    var clipboard = new ClipboardJS('.copiar-codigo');
+    clipboard.on('success', function (e) {
+        e.clearSelection();
+        spanCopiar.innerHTML = 'Código copiado....';        
+        //alert('¡Código copiado al portapapeles!');        
+    });
+</script>
+</html>

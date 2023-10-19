@@ -1,0 +1,49 @@
+.chat-box {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 70%; */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    padding: 5px;
+    margin: 5px;
+}
+
+.user {
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    text-align: right;
+}
+
+pre {
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    max-height: 250px;
+    overflow: auto;
+}
+
+code {
+    color: #333;    
+}
+
+.copiar-codigo {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copiar-codigo i {
+    margin-right: 5px;
+}
