@@ -117,3 +117,13 @@ footer {
 .social-icons a:hover {
     color: #55acee; /* Cambia el color al pasar el mouse sobre los iconos (por ejemplo, Twitter) */
 }
+
+hr{
+    color: #366e7fff;
+    border:#366e7fff solid 2px;
+}
+
+h2,h3,h4{
+    color: #366e7fff;
+    text-transform: uppercase;
+}
