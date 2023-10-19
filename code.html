@@ -26,34 +26,40 @@
         </div>
         <h1>Lester Zamora</h1>        
     </header>
-    <section>
-        <div class="chat-box">
-            <div class="message user">
-                <pre>
-                    <code id="codigo">
-                    // Tu código aquí
-                    function saludar() {
-                    console.log("Hola, mundo");
-                    }
-                    // Tu código aquí
-                    function saludar() {
-                    console.log("Hola, mundo");
-                    }
-                    // Tu código aquí
-                    function saludar() {
-                    console.log("Hola, mundo");
-                    }
-                    // Tu código aquí
-                    function saludar() {
-                    console.log("Hola, mundo");
-                    }
+    <section>    
+        <h3>Una pequeña ayuda, espero les sirva</h3>    
+        <div class="contenedor_codigo">  
+            <h3>lista</h3>
+            <div>                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi expedita vitae autem nobis nemo. Fuga dolor rerum autem. Officiis quis assumenda repudiandae laboriosam ipsa consequatur quas voluptatem commodi ex quisquam?</p>
+            </div>
+            <div>                                      
+                <div class="code-sample">
+                    <code class="language-csharp" id="codigo">
+                        public static List < string[] > GetListBoxSelectedText(ListBox control)
+                            {                                
+                                List < string[] > lista = new List < string[] >();
+                    
+                                if (control.Items.Count > 0)
+                                {
+                                    for (int i = 0; i < control.Items.Count; i++)
+                                    {
+                                        if (control.Items[i].Selected)
+                                        {
+                                            lista.Add(new[] { control.Items[i].Text, control.Items[i].Value });
+                                        }
+                                    }
+                                }
+                                return lista;
+                            }
                     </code>
-                </pre>
+                </div>
+                </div>
                 <button class="copiar-codigo" data-clipboard-target="#codigo">
                     <i class="far fa-copy"></i><span id="spanCopiar">Copiar Código</span>
-                </button>
-            </div>
-        </div>
+                </button>                           
+        </div>       
+        
     </section>
 
     <footer>
